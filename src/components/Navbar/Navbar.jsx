@@ -5,7 +5,7 @@ const Navbar = () => {
     const [open,setOpen] = useState(false);
     const routes = [{id : 1, name : 'Home', path : '/home'}, {id : 2, name :'About', path:'/about'},{id : 3, name : 'Contact', path :'/contact'},{id : 4, name : 'Products', path : '/products'},{id : 5, name : 'Services', path : '/services'}]
     return (
-        <nav>
+        <nav className='bg-purple-400'>
             <div onClick={() => setOpen(!open)} className='md:hidden'>
                 <span>
                         {
@@ -15,7 +15,7 @@ const Navbar = () => {
                         }
                 </span>
             </div>
-            <ul className={`md:flex absolute ${open ? 'top-6' : '-top-96'}`}>
+            <ul className={`md:flex absolute md:static duration-500 pl-8 pb-4 bg-purple-400 ${open ? 'top-6' : '-top-48'}`}>
                 {
                     routes.map(route => <Link route = {route} key = {route.id}> </Link>)
                 }
