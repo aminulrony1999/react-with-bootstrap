@@ -16,12 +16,6 @@
         "name": "Corporate Membership",
         "price":900,
         "features": ["Gym Access","Locker room","1 fitness class / week"]
-    },
-    {
-        "id" : 4,
-        "name": "Corporate Plus Membership",
-        "price":1500,
-        "features": ["Gym Access","Locker room","1 fitness class / week"]
     }
 
 ]
