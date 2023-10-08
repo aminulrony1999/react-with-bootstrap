@@ -10,7 +10,7 @@ const Pricelist = () => {
         .then(data => setPrices(data));
     },[]);
     return (
-        <div>
+        <div className='mx-12'>
             <h2 className='p-4 text-5xl text-center text-purple-950 bg-purple-300 font-bold'>Awesome Affordable Prices</h2>
             <div className='grid grid-cols-4 gap-3'>
             {

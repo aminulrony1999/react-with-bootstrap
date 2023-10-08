@@ -1,5 +1,6 @@
 import React from 'react';
 import './PriceCard.css';
+import Feature from '../Feature/Feature';
 const PriceCard = ({price}) => {
     return (
         <div className='bg-indigo-400 mt-4 rounded-md p-4 text-center'>
@@ -10,7 +11,7 @@ const PriceCard = ({price}) => {
             <h5 className='text-2xl font-bold my-6'>{price.name}</h5>
             <p>Features :</p>
             {
-                price.features.map(feature => <li>{feature}</li> )
+                price.features.map((feature, idx) => <Feature feature = {feature} key ={idx}></Feature> )
             }
         </div>
     );
