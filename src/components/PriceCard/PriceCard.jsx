@@ -9,7 +9,7 @@ const PriceCard = ({price}) => {
             <span className='text-2xl font-bold text-white'>/mon</span>
             </h2>
             <h5 className='text-2xl font-bold my-6'>{price.name}</h5>
-            <p>Features :</p>
+            <p className='underline font-bold text-white'>Features :</p>
             {
                 price.features.map((feature, idx) => <Feature feature = {feature} key ={idx}></Feature> )
             }
