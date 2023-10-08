@@ -3,7 +3,7 @@ import './PriceCard.css';
 import Feature from '../Feature/Feature';
 const PriceCard = ({price}) => {
     return (
-        <div className='bg-indigo-400 mt-4 rounded-md p-4 text-center'>
+        <div className='bg-indigo-400 mt-4 rounded-md p-4 text-center flex flex-col'>
             <h2>
             <span className='text-purple-800 text-5xl font-extrabold'>{price.price}</span>
             <span className='text-2xl font-bold text-white'>/mon</span>
@@ -13,7 +13,7 @@ const PriceCard = ({price}) => {
             {
                 price.features.map((feature, idx) => <Feature feature = {feature} key ={idx}></Feature> )
             }
-            <button className='w-full bg-green-600 py-2 rounded-md text-white'>Enrol now</button>
+            <button className='mt-auto hover:bg-green-700 w-full bg-green-600 py-2 rounded-md text-white'>Enrol now</button>
         </div>
     );
 };
