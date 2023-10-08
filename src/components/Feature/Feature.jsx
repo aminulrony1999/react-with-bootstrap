@@ -5,7 +5,7 @@ const Feature = ({feature}) => {
     return (
         <div className='flex items-center'>
             <CheckCircleIcon className="h-4 w-4 text-black" />
-            <span className='pl-4'>{feature}</span>
+            <span className='pl-2'>{feature}</span>
         </div>
     );
 };
